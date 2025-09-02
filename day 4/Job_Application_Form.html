@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Job Application Form</h1>
+        <form>
+            <table border="1" width="50%">
+
+                <tr>
+                    <td>enter your full name:</td>
+                    <td><input type="text" name="full name" placeholder="enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">email address:</label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone num">enter your phone num:</label></td>
+                    <td><input type="number" id="phone num"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">gender:</label></td>
+                    <td>
+                        <input type="radio" id="gender" value="male">male
+                        <input type="radio" id="gender" value="female">female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>job Role:</label></td>
+                    <td>
+                        <select name="jobrole">
+                            <option value="">--select Role--</option>
+                            <option value="developer">web developer</option>
+                            <option value="designer">ui/ux designer</option>
+                            <option value="manager">project manager</option>
+                            <option value="analyst">business analyst</option>
+                        </select>
+                    </td>
+                </tr>
+                <td><label for="job">date of birth:</label></td>
+                <td><input type="date" id="job"></td>
+                <tr>
+                    <td><label for="color">favorite color:</label></td>
+                    <td><input type="color" id="color"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="resume">upload resume</label></td>
+                    <td><input type="file" id="resume"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="skills">skills:</label></td>
+                    <td>
+                        <input type="checkbox" id="skills" value="html">html
+                        <input type="checkbox" id="skills" value="css">css
+                        <input type="checkbox" id="skills" value="java">java
+                        <input type="checkbox" id="skills" value="react">react
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="">cover letter:</label></td>
+                    <td>
+                        <textarea name="coverletter" id=""></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">cover letter:</label></td>
+                    <td>
+                        <textarea name="coverletter" rows="4" cols="30" placeholder="write something about yourself..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>

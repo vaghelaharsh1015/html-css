@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>welcome to the html5 multimedia palyer</h1>
+
+  <!--click and go to thise page-->
+  <nav>
+    <ul>
+      <li><a href="#audio">audio palyer</a></li>
+      <li><a href="#video">video palyer</a></li>
+      <li><a href="#gallery">image gallery</a></li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <!-- that is mp3 video-->
+  <audio controls>
+    <source src="dancing-in-the-rain-391553.mp3" type="audio/wav" />
+    your browser does not support the audio element.
+  </audio>
+
+  <p>samle audio file for testing html5 audio player</p>
+
+  <hr />
+
+  <!--that is mp4 video-->
+  <h2 id="video">video player</h2>
+
+  <video width="400" height="300" controls>
+    <source src="many.mkv" type="video/mp4" />
+
+    your browser does not support the video tag.
+  </video>
+  <hr>
+
+  <!--that is enter youtube video-->
+  <h3>featrured video</h3>
+  <iframe width="400" height="300" src="" title="youtube video palyer" frameborder="2">
+  </iframe>
+
+  <hr>
+  <!--that was three img-->
+  <h2 id="gallery">image gallery</h2>
+
+  <div>
+    <img src="day_4ex.jpg" alt="gallery image 1" width="200" height="150" />
+    <img src="day_4ex.jpg" alt="gallery image 2" width="200" height="150" />
+    <img src="day_4ex.jpg" alt="gallery image 3" width="200" height="150" />
+  </div>
+
+  <hr>
+  <h2>multimedia content table</h2>
+
+  <table border="1" width="60%">
+    <tr bgcolor="#E6E6FA">
+      <th>type</th>
+      <th>file</th>
+      <th>format</th>
+    </tr>
+    <tr>
+      <td><strong>audio</strong></td>
+      <td>background-music.mp3</td>
+      <td>mp3</td>
+    </tr>
+    <tr>
+      <td><strong>video</strong></td>
+      <td>sample-video.mp4</td>
+      <td>mp4</td>
+    </tr>
+    <tr>
+      <td><strong>image</strong></td>
+      <td>gallery-photo.jpg</td>
+      <td>jpeg</td>
+    </tr> 
+    <tr bgcolor="green">
+      <td colspan="3"><em>end of multimedia list</em></td>
+    </tr>
+
+    <h3>dowload multimedia files</h3>
+
+    <ul>
+      <li><a href="day_4ex.jpg" downlond>sample image</a></li>
+      <li><a href="#audio">paly audio sample</a></li>
+      <li><a href="#video">watch video sample</a></li>
+    </ul>
+
+    <p>--click on the link above to access multimedia content.</p>
+
+    <hr />
+
+    <h3>Reference Links</h3>
+
+    <p>Learn more about HTML5 multimedia:</p>
+    <ul>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">HTML5 Audio
+          Element</a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">HTML5 Video
+          Element</a>
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">HTML5 Video Tutorial</a>
+      </li>
+    </ul>
+
+    <p>
+      <small>&copy; 2024 HTML5 Multimedia Player. Educational Purpose Only.</small>
+    </p>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+    "scm-buttons.showGitCheckout": false,
+    "scm-buttons.showGitCleanAll": false,
+    "scm-buttons.showGitCommitAll": false,
+    "scm-buttons.showGitCommitAllAmend": false,
+    "scm-buttons.showGitCommitAllSigned": false,
+    "scm-buttons.showGitCommitStaged": false,
+    "scm-buttons.showGitCommitStagedAmend": false,
+    "scm-buttons.showGitPublish": false,
+    "scm-buttons.showGitPullFrom": true,
+    "scm-buttons.showGitPull": false
+}
