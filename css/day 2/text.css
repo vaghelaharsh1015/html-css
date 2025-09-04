@@ -1,18 +1,26 @@
-/* Icon Styling */
-.fa-large { font-size: 2em; }
-.fa-spin { animation: spin 2s linear infinite; }
-
-/* Custom Colors */
-.social-icon { 
-    color: #ff6803; 
-    font-size: 30px; 
-    margin: 5px;
+.control {
+  width: 500px;
+  height: 630px;
+  border: 1px solid black;
+  margin: auto;
+  background:#e8c179;
 }
 
-.svg-icon {
-    width: 24px;
-    height: 24px;
-    background-image: url('icons/star.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
+p {
+  font-size: 25px;
+  text-align: center;
+}
+.i {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 0.5;
+}
+.t {
+  text-decoration: underline;
+}
+#i {
+  font-size: small;
+}
+#t {
+  text-decoration: underline;
 }
