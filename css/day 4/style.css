@@ -1,0 +1,28 @@
+.img {
+  background-image: url("necher.jpg");
+  height: 300px;
+  background-size: cover;
+  text-align: center;
+  /* color: black;
+  font-size: 5px;
+  border-color: rgb(123, 141, 141); */
+}
+.color {
+  background: linear-gradient(to right, red, yellow, green);
+  height: 300px;
+}
+.rcolor {
+  background: radial-gradient(red, yellow, green);
+  height: 300px;
+}
+.ccolor {
+  background: conic-gradient(red, yellow, blue);
+  height: 300px;
+}
+
+.text {
+  border: 3px solid yellow;
+}
+.child {
+  text-align: center;
+}
