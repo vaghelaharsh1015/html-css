@@ -1,0 +1,26 @@
+.control {
+  width: 800px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.poster1{
+  width: 230px;
+  height: 270px;
+  border: 1px solid black;
+  border-radius: 8%;
+  margin-left: 25px;
+  display: inline-block;
+
+}
+
+.poster1 img{
+  width: 130px;
+  height: 130px;
+  padding:20px 40px;
+}
