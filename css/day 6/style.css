@@ -1,0 +1,11 @@
+/* .box1 .first::first-letter {
+  font-size: 40px;
+  color: blue;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+} */
+
+.fist{
+ justify-content:baseline;
+}
