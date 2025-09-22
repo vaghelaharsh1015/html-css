@@ -1,51 +1,32 @@
 .contenr {
-  background-color: silver;
+  background-color: #575555;
+  /* display: flex; */
 }
 
-.text {
+.contenr h1{
+  text-align: center;
+  color: #ffff;
+}
+
+.contenr p{
+  color: #ffff;
+  padding-left: 10px;
+}
+
+.contenr .text{
+  display: flex;
+  width: 1350px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.contenr .text .box{
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+  border: 1px solid black;
+  margin-left: 5px;
   text-align: center;
 }
-.a {
-  background-color: yellow;
-  display: flex;
-}
 
-/* 
-Flex
-Flexbox is short for the Flexible Box Layout module. Flexbox is a layout method for arranging items in rows or columns. Flexbox makes it easier to design a flexible responsive layout structure, without using float or positioning.
-1
-2
-3
-Display: Flex, Flex - Wrap
-The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
-The flex-wrap property can have one of the following values
-nowrap
-wrap
-wrap-reverse
-Display: Flex, Flex - Wrap: no-wrap
-The nowrap value specifies that the flex items will not wrap
-1
-2
-3
-5
-6
-7
-B
-9
-10
-11
-12
-13
-Display: Flex, Flex - Wrap: wrap
-1
-2
-3
-14
-7
-B
-9
-10
-Π
-12
-13
-The wrap value specifies that the flex iterns will wrap */
