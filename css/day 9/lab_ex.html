@@ -4,44 +4,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>Flexbox Justify & Align Content</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-  <div class="contenr">
-    <h1>display:flex</h1>
-    <p>Flexbox is short for the Flexible Box Layout module. Flexbox is a layout method for arranging items in rows or
-      columns. Flexbox makes it easier to design a flexible responsive layout structure, without using float or
-      positioning.</p>
-    <div class="text">
-      <div class="box">Box 1</div>
-      <div class="box">Box 2</div>
-      <div class="box">Box 3</div>
-      <div class="box">Box 4</div>
-      <div class="box">Box 5</div>
-      <div class="box">Box 6</div>
+  <!-- ========== JUSTIFY-CONTENT EXAMPLES ========== -->
+  <h1 style="text-align:center; margin-bottom:20px;">Flexbox Justify-Content Examples</h1>
+
+  <div class="section">
+    <h2>justify-content: flex-start;</h2>
+    <p>Items align at the start of the flex container.</p>
+    <div class="flex-container" style="justify-content: flex-start;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
     </div>
   </div>
 
-  <!-- <div class="contenr">
-    <div class="text">
-      <h1>Display: Flex, Flex - Wrap</h1>
-      <p>The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for
-        them on one flex line
-        The flex-wrap property can have one of the following values
-      <ul>
-        <ol>nowrap</ol>
-        <ol>wrap</ol>
-        <ol>WRAP-reverse</ol>
-      </ul>
-      Display: Flex, Flex - Wrap: no-wrap
-      The nowrap value specifies that the flex items will not wrap
-      positioning.</p>
+  <div class="section">
+    <h2>justify-content: flex-end;</h2>
+    <p>Items align at the end of the flex container.</p>
+    <div class="flex-container" style="justify-content: flex-end;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
     </div>
+  </div>
+
+  <div class="section">
+    <h2>justify-content: center;</h2>
+    <p>Items are centered inside the flex container.</p>
+    <div class="flex-container" style="justify-content: center;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>justify-content: space-between;</h2>
+    <p>Items are evenly distributed, first at the start, last at the end.</p>
+    <div class="flex-container" style="justify-content: space-between;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>justify-content: space-around;</h2>
+    <p>Items are evenly distributed with space around them.</p>
+    <div class="flex-container" style="justify-content: space-around;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <!-- ========== ALIGN-CONTENT EXAMPLES ========== -->
+  <h1 style="text-align:center; margin:40px 0 20px;">Flexbox Align-Content Examples</h1>
+
+  <div class="section">
+    <h2>align-content: flex-end;</h2>
+    <p>Items are packed at the end of the cross axis.</p>
+    <div class="align-container" style="align-content: flex-end;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>align-content: center;</h2>
+    <p>Items are packed in the center of the cross axis.</p>
+    <div class="align-container" style="align-content: center;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>align-content: stretch;</h2>
+    <p>Lines stretch to take up remaining space in the cross axis.</p>
+    <div class="align-container" style="align-content: stretch;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>align-content: space-between;</h2>
+    <p>First line at start, last line at end, equal space between lines.</p>
+    <div class="align-container" style="align-content: space-between;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>align-content: space-around;</h2>
+    <p>Lines are evenly spaced with equal space around them.</p>
+    <div class="align-container" style="align-content: space-around;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>align-content: space-evenly;</h2>
+    <p>Lines are evenly spaced, including edges.</p>
+    <div class="align-container" style="align-content: space-evenly;">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </div>
+
 </body>
 
 </html>
