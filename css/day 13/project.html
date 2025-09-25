@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #0f171e;
+  }
+
+  .page-container {
+    max-width: 1400;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .rental-section {
+    background-color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .section-content {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+  }
+
+  .text-content {
+    flex: 1;
+    max-width: 450px;
+  }
+
+  .movie-grid {
+    flex: 1;
+    min-height: 400px;
+    background-color: #1a1a1a;
+  }
+
+  .text-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+
+  .text-content p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  .rent-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: aal 0.3 ease;
+  }
+
+  .rent-btn:hover {
+    background-color: #e6e6e6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  }
+
+  .movie-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .grid-row-1,
+  .grid-row-2,
+  .grid-row-3 {
+    display: flex;
+    gap: 12px;
+  }
+
+  .movie-grid img {
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .movie-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0n 8px 24px rgba(255, 255, 255, 0.2);
+  }
+
+  .grid-row-1 {
+    justify-content: flex-start;
+  }
+
+  .grid-row-1 img:nth-child(1) {
+    flex: 0 0 35%;
+  }
+
+  /* .grid-row-1 img:nth-child(2) {
+    flex: 0 0 30%;
+  }
+
+  .grid-row-1 img:nth-child(3) {
+    flex: 0 0 30%;
+  } */
+
+  .grid-row-2 {
+    justify-content: flex-end;
+  }
+
+  .grid-row-2 img {
+    flex: 0 0 35%;
+  }
+
+  .grid-row-3 {
+    justify-content: space-between;
+  }
+
+  .grid-row-3 img {
+    flex: 0 0 35%;
+  }
+
+  .rental-section {
+    background-color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    border-top: 4px solid #146eb4;
+  }
+</style>
+
+<body>
+  <div class="page-container">
+    <section class="rental-seciton">
+      <div class="text-content">
+        <h2>movie rentals on prime video</h2>
+        <p>early access to new movies ,before digital subcription</p>
+        <button class="rent-btn">rent-now</button>
+      </div>
+      <div class="movie-grid">
+        <div class="grid-row-1">
+          <img src="https://placehold.co/200x120/png" alt="movie 1">
+        </div>
+        <div class="grid-row-2">
+          <img src="https://placehold.co/200x120/png" alt="movie 2">
+        </div>
+        <div class="grid-row-3">
+          <img src="https://placehold.co/200x120/png" alt="movie 3">
+        </div>
+        <div class="grid-row-4">
+          <img src="https://placehold.co/200x120/png" alt="movie 4">
+        </div>
+        <div class="grid-row-5">
+          <img src="https://placehold.co/200x120/png" alt="movie 5">
+        </div>
+        <div class="grid-row-6">
+          <img src="https://placehold.co/200x120/png" alt="movie 6">
+        </div>
+        <div class="grid-row-7">
+          <img src="https://placehold.co/200x120/png" alt="movie 7">
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription-section">
+      <div class="section-content">
+        <div class="text-content">
+          <p>Customers can subscribe to get access to a variety of premium and specialty content, easily accessible
+            within the Prime Video app</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
