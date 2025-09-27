@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: #007bff; margin-bottom: 30px;">CSS Flexbox Alignment Properties</h1>
+    
+    <!-- Justify Content Section -->
+    <div class="section">
+        <h2>1. Justify-Content (Main Axis Alignment)</h2>
+        <p><strong>Purpose:</strong> Main axis (horizontal) पर items की positioning control करता है।</p>
+        
+        <div class="justify-demo">
+            <div>
+                <div class="demo-label">flex-start (default)</div>
+                <div class="justify-container js-flex-start">
+                    <div class="justify-item">1</div>
+                    <div class="justify-item">2</div>
+                    <div class="justify-item">3</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">flex-end</div>
+                <div class="justify-container js-flex-end">
+                    <div class="justify-item">1</div>
+                    <div class="justify-item">2</div>
+                    <div class="justify-item">3</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">center</div>
+                <div class="justify-container js-center">
+                    <div class="justify-item">1</div>
+                    <div class="justify-item">2</div>
+                    <div class="justify-item">3</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">space-between</div>
+                <div class="justify-container js-space-between">
+                    <div class="justify-item">1</div>
+                    <div class="justify-item">2</div>
+                    <div class="justify-item">3</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">space-around</div>
+                <div class="justify-container js-space-around">
+                    <div class="justify-item">1</div>
+                    <div class="justify-item">2</div>
+                    <div class="justify-item">3</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">space-evenly</div>
+                <div class="justify-container js-space-evenly">
+                    <div class="justify-item">1</div>
+                    <div class="justify-item">2</div>
+                    <div class="justify-item">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Align Items Section -->
+    <div class="section">
+        <h2>2. Align-Items (Cross Axis Alignment)</h2>
+        <p><strong>Purpose:</strong> Cross axis (vertical) पर items की positioning control करता है।</p>
+        
+        <div class="align-demo">
+            <div>
+                <div class="demo-label">stretch (default)</div>
+                <div class="align-container ai-stretch">
+                    <div class="align-item">A</div>
+                    <div class="align-item">B</div>
+                    <div class="align-item">C</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">center</div>
+                <div class="align-container ai-center">
+                    <div class="align-item">A</div>
+                    <div class="align-item">B</div>
+                    <div class="align-item">C</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">flex-start</div>
+                <div class="align-container ai-flex-start">
+                    <div class="align-item">A</div>
+                    <div class="align-item">B</div>
+                    <div class="align-item">C</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">flex-end</div>
+                <div class="align-container ai-flex-end">
+                    <div class="align-item">A</div>
+                    <div class="align-item">B</div>
+                    <div class="align-item">C</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">baseline</div>
+                <div class="align-container ai-baseline">
+                    <div class="align-item">A</div>
+                    <div class="align-item">B</div>
+                    <div class="align-item">C</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Align Content Section -->
+    <div class="section">
+        <h2>3. Align-Content (Wrapped Lines Alignment)</h2>
+        <p><strong>Purpose:</strong> Multiple wrapped lines की cross axis पर positioning control करता है।</p>
+        
+        <div class="content-demo">
+            <div>
+                <div class="demo-label">stretch (default)</div>
+                <div class="content-container ac-stretch">
+                    <div class="content-item">1</div>
+                    <div class="content-item">2</div>
+                    <div class="content-item">3</div>
+                    <div class="content-item">4</div>
+                    <div class="content-item">5</div>
+                    <div class="content-item">6</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">center</div>
+                <div class="content-container ac-center">
+                    <div class="content-item">1</div>
+                    <div class="content-item">2</div>
+                    <div class="content-item">3</div>
+                    <div class="content-item">4</div>
+                    <div class="content-item">5</div>
+                    <div class="content-item">6</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">space-between</div>
+                <div class="content-container ac-space-between">
+                    <div class="content-item">1</div>
+                    <div class="content-item">2</div>
+                    <div class="content-item">3</div>
+                    <div class="content-item">4</div>
+                    <div class="content-item">5</div>
+                    <div class="content-item">6</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="demo-label">space-around</div>
+                <div class="content-container ac-space-around">
+                    <div class="content-item">1</div>
+                    <div class="content-item">2</div>
+                    <div class="content-item">3</div>
+                    <div class="content-item">4</div>
+                    <div class="content-item">5</div>
+                    <div class="content-item">6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Practical Examples Section -->
+    <div class="section">
+        <h2>4. Practical Examples</h2>
+        
+        <h3>Professional Header Layout</h3>
+        <div class="header-demo">
+            <div class="logo">BrandName</div>
+            <nav class="nav-demo">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="actions">
+                <a href="#" class="btn-demo">Login</a>
+                <a href="#" class="btn-demo">Sign Up</a>
+            </div>
+        </div>
+        
+        <h3>Perfect Center Card</h3>
+        <div class="card-container">
+            <div class="demo-card">
+                <h3>Welcome!</h3>
+                <p>यह card perfectly centered है दोनों horizontally और vertically। Flexbox की power से।</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Properties Summary -->
+    <div class="section">
+        <h2>5. Properties Summary</h2>
+        <div class="comparison-table">
+            <div class="comparison-row">
+                <div class="property-name">justify-content</div>
+                <div class="property-description">Main axis (horizontal) पर items की alignment</div>
+            </div>
+            <div class="comparison-row">
+                <div class="property-name">align-items</div>
+                <div class="property-description">Cross axis (vertical) पर items की alignment</div>
+            </div>
+            <div class="comparison-row">
+                <div class="property-name">align-content</div>
+                <div class="property-description">Wrapped lines की cross axis पर alignment</div>
+            </div>
+        </div>
+        
+        <div style="background-color: #e7f3ff; padding: 20px; border-radius: 10px; margin-top: 20px; border-left: 4px solid #007bff;">
+            <h3>Key Points:</h3>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li><strong>justify-content</strong> main axis को control करता है</li>
+                <li><strong>align-items</strong> single line items को cross axis पर align करता है</li>
+                <li><strong>align-content</strong> केवल wrapped content के साथ काम करता है</li>
+                <li><strong>Perfect centering</strong> के लिए दोनों properties combine करें</li>
+                <li><strong>space-between</strong> navigation menus के लिए ideal है</li>
+                <li><strong>center</strong> cards और modals के लिए perfect है</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

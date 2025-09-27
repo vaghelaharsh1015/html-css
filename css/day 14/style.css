@@ -1,0 +1,144 @@
+/* Universal Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes managing widths and padding much easier */
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #0F171E; /* Dark background color of Prime Video */
+    color: #FFFFFF; /* White text by default */
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none; /* Removes the underline from links */
+}
+
+/* --- 1. Navigation Bar Styling --- */
+.navbar {
+    display: flex; /* Uses Flexbox for horizontal alignment */
+    justify-content: space-between; /* Pushes content to the edges */
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #0F171E; /* Same as body, but could be darker */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00A8E1; /* A light blue color for emphasis */
+}
+
+.nav-links a {
+    margin-right: 20px;
+    font-size: 0.9em;
+    opacity: 0.8; /* Makes the links slightly dimmer */
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.join-btn {
+    background-color: #00A8E1;
+    color: #0F171E;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* --- 2. Featured Section Styling --- */
+.featured-section {
+    /* To simulate the large banner image */
+    height: 400px; 
+    background-image: url('placeholder-bg.jpg'); /* Use a placeholder image or a dark color */
+    background-color: #232D37; /* Fallback dark color */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+}
+
+.featured-content h1 {
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+
+.description {
+    max-width: 400px;
+    margin: 10px 0 20px 0;
+}
+
+.watch-btn {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* --- 3. Movie Content Styling --- */
+.content-container {
+    padding: 20px 40px;
+}
+
+.movie-row {
+    margin-bottom: 30px;
+}
+
+.movie-row h2 {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.see-more {
+    font-size: 0.9em;
+    margin-left: 15px;
+    color: #00A8E1;
+}
+
+.posters-container {
+    display: flex; /* Key for arranging posters horizontally */
+    overflow-x: hidden; /* Stops horizontal scrolling for this example */
+    gap: 15px; /* Space between posters */
+    margin-top: 15px;
+}
+
+.poster-item {
+    min-width: 200px; /* Gives a standard width to a poster */
+    cursor: pointer;
+}
+
+.poster-placeholder {
+    height: 300px; /* Placeholder height for the image */
+    background-color: #232D37; /* Darker box for the poster */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Place text at the top */
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: yellow; /* To simulate the 'TOP 10' badge */
+}
+
+.title-placeholder {
+    margin-top: 5px;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* --- 4. Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+    color: #A0A0A0;
+}
