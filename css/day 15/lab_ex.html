@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation Media Query</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .orientation-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        /* Portrait orientation */
+        @media (orientation: portrait) {
+            body {
+                background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            }
+            .orientation-box::before {
+                content: "📱 Portrait Mode";
+                display: block;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* Landscape orientation */
+        @media (orientation: landscape) {
+            body {
+                background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+            }
+            .orientation-box::before {
+                content: "📱 Landscape Mode";
+                display: block;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="orientation-box">
+        <h2>Orientation Detection</h2>
+        <p>अपने mobile को rotate करें orientation change देखने के लिए।</p>
+    </div>
+</body>
+</html>
