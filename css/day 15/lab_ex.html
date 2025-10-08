@@ -98,9 +98,30 @@
             transform: translateY(-2px);
         }
 
-        .features{
+        .features {
             padding: 80px 0;
             background-color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            gap: 30px;
+        }
+
+        .features-card{
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transfrom 0.3s ease;
         }
     </style>
 </head>
@@ -121,12 +142,57 @@
         </div>
     </header>
 
-    <!--features section-->
+    <!--hero section-->
     <section class="features" id="home">
         <div class="container">
             <h1>welcome to responsive design</h1>
             <p>यह website सभी devices पर perfectly काम करती है</p>
             <button class="btn">get started</button>
+        </div>
+    </section>
+
+    <!-- features section -->
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Perfect display on all mobile devices with responsive design</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Desktop Ready</h3>
+                    <p>Optimized layout for desktop and laptop screens</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Loading</h3>
+                    <p>Lightning fast performance on all devices</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Modern Design</h3>
+                    <p>Beautiful and contemporary user interface</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>Built with security best practices</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Cross Browser</h3>
+                    <p>Works perfectly on all modern browsers</p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
