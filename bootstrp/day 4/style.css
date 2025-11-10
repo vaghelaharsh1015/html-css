@@ -1,0 +1,24 @@
+.row {
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.col {
+  background-color: aqua;
+  border: 1px solid white;
+}
+
+.col-8 {
+  background-color: aqua;
+  border: 1px solid white;
+}
+
+.col-4 {
+  background-color: aqua;
+  border: 1px solid white;
+}
+
+.col-sm-3 {
+  background-color: aqua;
+  border: 1px solid white;
+}
